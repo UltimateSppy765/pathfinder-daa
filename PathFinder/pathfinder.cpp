@@ -1,8 +1,15 @@
-#include "pathfinder.h"
+module;
 #include <QMessageBox>
 #include <QtConcurrent/QtConcurrentRun>
+#include "ui_pathfinder.h"
+module pathfinder;
 
-using namespace utils;
+/*
+* Need to expose the header in order
+* for the symbols to recognize the PathFinder class
+*/
+
+#include "moc_pathfinder.cpp"
 
 Matrix<point_state> PathFinder::generateMatrix() {
     Matrix<point_state> matrix(Pair(rowSlider->value(), columnSlider->value()));
