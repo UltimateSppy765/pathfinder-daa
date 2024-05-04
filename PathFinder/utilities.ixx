@@ -1,7 +1,6 @@
-module;
-#include <utility>
-#include <vector>
 export module utilities;
+
+import std.core;
 
 using namespace std;
 
