@@ -1,5 +1,12 @@
 module utilities;
 
+using namespace utils;
+
+template <typename T>
+bool valid(const Matrix<T>& m, const Pair& p) {
+    return p.first < m.dimensions.first && p.second < m.dimensions.second;
+}
+
 // Backtracking
 bool utils::track(Matrix<point_state>& m, const Pair& source, const Pair& destination, vector<Pair>& path) {
     m[source] = VISITED;

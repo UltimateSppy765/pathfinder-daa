@@ -48,10 +48,3 @@ export namespace utils {
     bool track(Matrix<point_state>&, const Pair&, const Pair&, vector<Pair>&);
     void bound(Matrix<point_state>&, const Pair&, const Pair&, vector<Pair>&, vector<Pair>&);
 }
-
-using namespace utils;
-
-template <typename T>
-bool valid(const Matrix<T>& m, const Pair& p) {
-    return p.first < m.dimensions.first && p.second < m.dimensions.second;
-}
