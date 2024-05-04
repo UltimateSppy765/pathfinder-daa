@@ -1,10 +1,4 @@
-module;
-#include <vector>
 module utilities;
-
-import utilities;
-
-using namespace utils;
 
 // Backtracking
 bool utils::track(Matrix<point_state>& m, const Pair& source, const Pair& destination, vector<Pair>& path) {
