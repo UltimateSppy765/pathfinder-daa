@@ -1,9 +1,11 @@
+/*
+* Dummy header file for the sake of MOC
+* to generate the corresponding MOC file
+*/
+
 #pragma once
 
-#include <QFuture>
 #include <QFutureWatcher>
-#include <QtWidgets/QMainWindow>
-#include <vector>
 #include "ui_pathfinder.h"
 
 import utilities;
