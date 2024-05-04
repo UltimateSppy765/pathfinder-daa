@@ -78,6 +78,12 @@
     <ClCompile>
       <EnableModules>true</EnableModules>
     </ClCompile>
+    <QtMoc>
+      <NoInclude>true</NoInclude>
+    </QtMoc>
+    <QtMoc>
+      <DynamicSource>input</DynamicSource>
+    </QtMoc>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -93,6 +99,12 @@
     <ClCompile>
       <EnableModules>true</EnableModules>
     </ClCompile>
+    <QtMoc>
+      <NoInclude>true</NoInclude>
+    </QtMoc>
+    <QtMoc>
+      <DynamicSource>input</DynamicSource>
+    </QtMoc>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
@@ -119,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="pathfinder.ixx" />
     <ClCompile Include="utilities.cpp" />
     <ClCompile Include="utilities.ixx" />
     <QtRcc Include="pathfinder.qrc" />
