@@ -1,5 +1,6 @@
-#include "pathfinder.h"
-#include <QtWidgets/QApplication>
+#include <QApplication>
+
+import pathfinder;
 
 int main(int argc, char *argv[])
 {
